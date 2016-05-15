@@ -1,9 +1,11 @@
 from celular import Celular
 
 #celular
-telefone_do_ramon = Celular("Ramon","981388010")
+telefone_do_ramon = Celular("Ramon","23432")
 telefone_do_adriano = Celular("Adriano","999199911")
 telefone_do_davi = Celular("Davi","1234567")
+
+print telefone_do_ramon
 
 #contato
 telefone_do_ramon.add_contato(telefone_do_adriano)
