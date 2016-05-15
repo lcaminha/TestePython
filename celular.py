@@ -13,3 +13,5 @@ class Celular(Message,Contato):
     @property
     def telefone(self):
         return self.__telefone
+    def __str__(self):
+        return 'nome:'+self.__nome+" - telefone:"+self.__telefone
