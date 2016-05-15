@@ -1,8 +1,11 @@
+# -*- coding: utf-8 -*-
 class Message(object):
     messagens_recebidas = [];
     messagens_enviadas  = [];
 
     def compoe_messagem(self,remetente,messagem):
+        if isinstance(remetente,type(self)) == False:
+            raise TypeError("o remetente não é um object Celular")
         remetente.add_caixa_de_entrada({self:messagem})
         self.add_caixa_de_saida({remetente:messagem})
 
